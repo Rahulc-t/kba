@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CertiApp Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-100">
+    <nav class="flex justify-end">
+        <a href="./index.html"><input type="button" value="Home" class="w-[200px] h-[50px] m-4 rounded-lg bg-slate-200  text-2xl shadow-lg shadow-slate-600"></a>
+        <input type="button" value="Issue Certificate" class="w-[200px] h-[50px]  bg-blue-500 text-white  m-4 rounded-lg text-2xl shadow-lg shadow-slate-600">
+    </nav>
+    <p class="text-center text-5xl font-bold text-slate-600">Certificate DApp</p>
+    <div class="flex justify-center ">
+    <div class="flex justify-center mt-16 border w-[700px] h-[730px] p-4 bg-blue-200 rounded-3xl shadow-lg shadow-black">
+        <form class="space-y-7 mt-4 mb-4">
+            <p class="text-3xl font-bold text-slate-600">Issue New Certificate</p>
+            <div class="flex flex-col">
+                <label class="text-xl">Select Course</label>
+                <select name="course" id="d" class="w-[450px] h-[50px] rounded-lg text-2xl border border-slate-300 shadow-lg shadow-slate-600 p-4 bg-white">
+                    <option value="course">Certified Blockchain Associate</option>
+                    <option value="course">Blockchain Foundation Program</option>
+                    <option value="course">Developer Essentials For Blockchain</option>
+                </select>
+            </div>
+            <div class="flex flex-col">
+                <label class="text-xl">Certificate Id</label>
+                <input type="text" class="w-[450px] h-[50px] rounded-lg text-xl border border-slate-300 shadow-lg shadow-slate-600 p-4">
+            </div>
+            <div class="flex flex-col">
+                <label class="text-xl">Candidate Name</label>
+                <input type="text" class="w-[450px] h-[50px] rounded-lg text-xl border border-slate-300 shadow-lg shadow-slate-600 p-4">
+            </div>
+            <div class="flex flex-col">
+                <label class="text-xl">Grade</label>
+                <select name="course" id="c" class="w-[450px] h-[50px] rounded-lg text-xl border border-slate-300 shadow-lg shadow-slate-600 p-4 bg-white">
+                    <option value="grade">S</option>
+                    <option value="grade">A</option>
+                    <option value="grade">B</option>
+                    <option value="grade">C</option>
+                </select>
+            </div>
+            <div class="flex flex-col">
+                <label class="text-xl">Issue Date</label>
+                <input type="date" name="" id=""class="w-[450px] h-[50px] rounded-lg text-xl border border-slate-300 shadow-lg shadow-slate-600 p-4">
+            </div>
+            <div>
+                <input type="submit" value="Issue Certificate" class="w-[200px] h-[50px] rounded-lg text-xl border border-slate-300 shadow-lg shadow-slate-600 bg-blue-500">
+            </div>
+        </form>  
+    </div>
+    
+</body>
+</html>
