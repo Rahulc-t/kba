@@ -204,7 +204,11 @@ ul.nav1{
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0.8;
     
+}
+.cutgreen:hover{
+    opacity: 1;
 }
 .cutyellow{
     background-color: #fff080 ;
@@ -217,6 +221,10 @@ ul.nav1{
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0.8;
+}
+.cutyellow:hover{
+    opacity: 1;
 }
 .cutblack{
     background-color: #000;
@@ -229,6 +237,10 @@ ul.nav1{
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0.8;
+}
+.cutblack:hover{
+    opacity: 1;
 }
 .cutred{
     background-color: #ffb3bb;
@@ -241,6 +253,10 @@ ul.nav1{
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0.8;
+}
+.cutred:hover{
+    opacity: 1;
 }
 .cutcode{
     background-color: rgb(221, 221, 221);
@@ -282,6 +298,10 @@ h3{
     padding-top: 15px;
     padding-left: 15px;
     margin-left: 20px;
+    opacity: 0.9;
+}
+.try:hover{
+    opacity: 1;
 }
 .boxbody{
     display: flex;
@@ -399,6 +419,10 @@ h3{
     margin-top: 30px;
     text-align: center;
     margin-bottom: 30px;
+    opacity: 0.9;
+}
+.limg:hover{
+    opacity:1;
 }
 .ul3{
     list-style-type:none;
