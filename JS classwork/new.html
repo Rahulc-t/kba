@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x=75;
+        if(x%2==0){
+            document.write(x," is an even number")
+        }
+        else{
+            document.write(x," is an odd number")
+        }
+    </script>
+    <hr>
+    <script>
+        let y=5;
+        if(y==1){
+            document.write("Monday")
+        }
+        else if(y==2){
+            document.write("tuesday")
+        }
+        else if(y==3){
+            document.write("wednesday")
+        }
+        else if(y==4){
+            document.write("thursday")
+        }
+        else if(y==5){
+            document.write("friday")
+        }
+        else if(y==6){
+            document.write("saturday")
+        }
+        else if(y==7){
+            document.write("sunday")
+        }
+        else{
+            document.write("Invalid Entry")
+        }
+    </script>
+    <hr>
+    <script>
+        let a=6,b=5,c=7;
+        if(a>b){
+            if(a>c){
+                document.write(a,"is the largest")
+            }
+            else{
+                document.write(c,"is the largest")
+            }
+        }
+        else{
+            if(b>c){
+                document.write(b,"is the largest")
+            }
+            else{
+                document.write(c,"is the largest")
+            }
+        }
+    </script>
+    <hr>
+    <script> 
+        let t=1,q=2;
+        switch(t+q){
+            case 1:{
+                document.write("One");
+                break;
+            }
+            case 2:{
+                document.write("Two");
+                break;
+            }
+            case 3:{
+                document.write("Three");
+                break;
+            }
+            case 4:{
+                document.write("Four");
+                break;
+            }
+            case 5:{
+                document.write("Five");
+                break;
+            }
+            default:{
+                document.write("Invalid Entry")
+            }
+        }
+    </script>
+    <hr>
+    <script> 
+        let z=7,z2=5;
+        let op="*";
+        switch(op){
+            case "+":{
+                document.write(z+z2);
+                break;
+            }
+            case "-":{
+                document.write(z-z2);
+                break;
+            }
+            case "*":{
+                document.write(z*z2);
+                break;
+            }
+            case "/":{
+                document.write(z/z2);
+                break;
+            }
+            case "%":{
+                document.write(z%z2);
+                break;
+            }
+            default:{
+                document.write("Invalid Entry")
+            }
+        }
+    </script>
+    <hr>
+    <script>
+        let n1=80,n2=170,n3=98,n4=33;
+        if(n1>n2 && n1>n3 && n1>n4){
+            document.write(n1,"is greatest")
+        }
+        else if(n2>n1 && n2>n3 && n2>n4){
+            document.write(n2,"is greatest")
+        }
+        else if(n3>n1 && n3>n2 && n3>n4){
+            document.write(n3,"is greatest")
+        }
+        else{
+            document.write(n4,"is greatest")
+        }
+    </script>
+    <hr>
+    <script>
+    (n1>n2)?(n1>n3)?document.write("greatest",n1):document.write("greatest",n3):(n2>n3)?document.write("greatest",n2):document.write("greatest",n3)
+    </script>
+
+</body>
+</html>
