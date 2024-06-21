@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let x = 25, y = 25
+        if (x == 50 || y == 50) {
+            document.write("one is fifty")
+        }
+        else if (x + y == 50) {
+            document.write("sum is fifty")
+        }
+        else {
+            document.write("no result")
+        }
+    </script>
+    <hr>
+    <script>
+        x = 33
+        if (x % 3 == 0 && x % 7 == 0) {
+            document.write("multiple of 3 and 7")
+        }
+        else if (x % 3 == 0) {
+            document.write("multiple of 3")
+        }
+        else if (x % 7 == 0) {
+            document.write("multiple of 7")
+        }
+        else {
+            document.write("no result")
+        }
+    </script>
+    <hr>
+    <script>
+        x = 33,y=56
+        if(x>=40 && x<=60){
+            document.write("x belongs to 40-60")
+        }
+        else if(x>=70 && x<=100){
+            document.write("x belongs to 70-100")
+        }
+        else{
+            document.write("invalid range")
+        }
+        if(y>=40 && y<=60){
+            document.write("<br>y belongs to 40-60")
+        }
+        else if(y>=70 && y<=100){
+            document.write("<br>y belongs to 70-100")
+        }
+        else{
+            document.write("<br>invalid range")
+        }
+    </script>
+    <hr>
+    <script>
+        x=23,y=16
+        let sum=x+y;
+        (sum>=50 && sum<=80)?document.write("65"):document.write("80")
+    </script>
+    <hr>
+    <script>
+        x = 14, y = 25
+        if (x == 8 || y == 8) {
+            document.write("one is 8")
+        }
+        else if (x + y == 8) {
+            document.write("sum is 8")
+        }
+        else if (x - y == 8) {
+            document.write("diff is 8")
+        }
+        else {
+            document.write("no result")
+        }
+    </script>
+    <hr>
+    <script>
+        x=5
+        if(x>=0){
+            document.write("Positive number")
+        }
+        else{
+            document.write("negative number")
+        }
+    </script>
+    <hr>
+    <script>
+        let year=2067
+        if((year%4==0&&year%100!=0)||year%400==0){
+            document.write("is a leap year")
+
+        }
+        else{
+            document.write("not a leap year")
+        }
+    </script>
+    <hr>
+    <script>
+        let age=34
+        if(age>18){
+            document.write("can vote")
+        }
+        else{
+            document.write("cannot vote")
+        }
+    </script>
+    <hr>
+    <script>
+        let a=2,b=-5,c=3,k,x1,x2
+        k=(b*b-(4*a*c))**0.5
+        x1=(-b+k)/(2*a)
+        x2=(-b-k)/(2*a)
+        if(k!=0){
+            document.write("the roots are :",x1,x2)
+        }
+        else{
+            document.write("the root is :",x1)
+        }
+    </script>
+    <hr>
+    <script>
+        let temp=67
+        if(temp<0){
+            document.write("Freezing weather")
+
+        }
+        else if(temp>0 && temp<=10){
+            document.write("Very Cold weather")
+        }
+        else if(temp>10 && temp<=20){
+            document.write("Cold weather")
+        }
+        else if(temp>20 && temp<=30){
+            document.write("Normal in Temp")
+        }
+        else if(temp>30 && temp<=40){
+            document.write("Its Hot")
+        }
+        else{
+            document.write("Its Very Hot")
+        }
+    </script>
+    <hr>
+    <script>
+        a=23,b=5,c=10
+        let pro=a*b*c
+        if(pro>0){
+            document.write("The sign is +")
+        }
+        else{
+            document.write("The sign is -")
+        }
+    </script>
+    <hr>
+    <script>
+        let cg=7
+        if(cg=8){
+            document.write("You got 8 CGPA.")
+        }
+    </script>
+</body>
+</html>
