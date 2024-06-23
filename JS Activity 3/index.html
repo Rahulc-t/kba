@@ -11,5 +11,171 @@
         para.innerText="my name is rahul i am 22 years old"
         document.body.appendChild(para)
     </script>
+    <hr>
+    <div id="808"></div>
+    <script>
+        let temp=document.createElement("ul");
+        temp.id="1";
+        document.getElementById("808").appendChild(temp);
+        
+        
+        let a=document.createElement("li");
+        a.innerHTML="champions";
+        document.getElementById("1").appendChild(a);
+         a=document.createElement("li");
+        a.innerHTML="Revenant";
+        document.getElementById("1").appendChild(a);
+        a=document.createElement("li");
+        a.innerHTML="Prisoners";
+        document.getElementById("1").appendChild(a);
+        a=document.createElement("li");
+        a.innerHTML="Intrestellar";
+        document.getElementById("1").appendChild(a);
+    </script>
+    <hr>
+    <div id="909"></div>
+    <script>
+        temp1=document.createElement("select");
+        temp1.id="11";
+        document.getElementById("909").appendChild(temp1);
+        a=document.createElement("option");
+        a.innerHTML="C";
+        document.getElementById("11").appendChild(a);
+        a=document.createElement("option");
+        a.innerHTML="Python";
+        document.getElementById("11").appendChild(a);
+        a=document.createElement("option");
+        a.innerHTML="C++";
+        document.getElementById("11").appendChild(a);
+        a=document.createElement("option");
+        a.innerHTML="Java";
+        document.getElementById("11").appendChild(a);
+    </script>
+    <hr>
+    <div id="606"></div>
+
+    <script>
+        
+        let temp2=document.createElement("select")
+        temp2.id="9"
+        document.getElementById("606").appendChild(temp2);
+        a=document.createElement("option")
+        a.innerHTML="fruit cake"
+        document.getElementById("9").appendChild(a);
+        a=document.createElement("option")
+        a.innerHTML="red velvet"
+        document.getElementById("9").appendChild(a);
+        a=document.createElement("option")
+        a.innerHTML="black forest"
+        document.getElementById("9").appendChild(a);
+        a=document.createElement("option")
+        a.innerHTML="white forest"
+        document.getElementById("9").appendChild(a);
+        
+    </script>
+    <hr>
+    <script>
+        let fname="rahul"
+        let lname="c t"
+        let full=fname+lname;
+        full=full.toUpperCase()
+        document.write(full)
+    </script>
+    <hr>
+    <script>
+        let x="You can study anything if you have a will to do it"
+        document.write(x)
+        document.write("<br>",x.substr(0,14))
+        document.write(x.substr(0,3))
+        document.write(x.substr(36,4))
+        document.write(x.substr(44,6))
+    </script>
+    <hr>
+    <script>
+        x="MongoDB is a decentralised distributed ledger . MongoDB can eliminate centralisation."
+        document.write(x.replace("MongoDB","Blockchain"))
+        document.write("<br>",x.substr(0,46))
+    </script>
+    <hr>
+    <script>
+        document.write("Hello World"==="hEllO World","<br>")
+        document.write(typeof("Hello World"==="hEllO World"),"<br>")
+    </script>
+    <hr>
+    <p>I am <span id="006"></span>yrs of old and my brother is 10 yrs older to me. He is now <span id="005"></span> years old</p>
+    <p>My name is<span id="008"></span> <span id="007"></span>I live in <span id="009"></span></p>
+    <script>
+        let age=20
+        document.getElementById("006").innerHTML=age;
+        document.getElementById("005").innerHTML=age+10;
+        let fn="RAHUL",ln="C T",pl="kozhikode"
+        document.getElementById("009").innerHTML=pl.toUpperCase()
+        document.getElementById("007").innerHTML=ln
+        document.getElementById("008").innerHTML=fn
+
+    </script>
+    <hr>
+    <script>
+        x="I like to play video games."
+        document.write(x.replace("like","dont like"))
+    </script>
+    <hr>
+    <script>
+        x="my first.js"
+        document.write(x.replace(".js",""))
+    </script>
+    <hr>
+    <script>
+        num1=8,num2=7
+        document.write("<br>num1=",num1)
+        document.write("<br>num2=",num2)
+        temp=num1;
+        num1=num2;
+        num2=temp;
+        document.write("<br>num1=",num1)
+        document.write("<br>num2=",num2)
+    </script>
+    <hr>
+    <script>
+        num1=9,num2=4
+        document.write("<br>num1=",num1)
+        document.write("<br>num2=",num2)
+        num1=num1+num2
+        num2=num1-num2
+        num1=num1-num2
+        document.write("<br>num1=",num1)
+        document.write("<br>num2=",num2)
+    </script>
+    <hr>
+    <script>
+        let cel=87,far
+        far=(cel*1.8)+32
+        document.write("Temp in farenheit=",far)
+    </script>
+    <hr>
+    <script>
+        num1=5
+        document.write("square of number=",num1*num1)
+        document.write("<br>cube of number=",num1*num1*num1)
+    </script>
+    <hr>
+    <script>
+        let w=10,l=5,r=8
+        document.write("AREA OF:")
+        document.write("<br>Square=",l*l)
+        document.write("<br>Rctangle=",l*w)
+        document.write("<br>Circle=",3.14*r*r)
+        document.write("<hr>")
+        document.write("<br>PERIMETER OF:")
+        document.write("<br>Square=",4*l)
+        document.write("<br>Rctangle=",2*(l+w))
+        document.write("<br>Circle=",3.14*r*2)
+    </script>
+    <hr>
+    <script>
+        let si,ci,prin=20000,rate=4,time=5
+        si=(prin*rate*time)/100
+        document.write("simple interest=",si)
+    </script>
 </body>
 </html>
