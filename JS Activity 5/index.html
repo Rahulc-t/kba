@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let i=1,avg,sum=0
+        for(;i<=10;i++)
+        {
+            sum=sum+i;
+        }
+        document.write("SUM=",sum)
+        avg=sum/10
+        document.write("<br>AVERAGE=",avg)
+        document.write("<hr>")
+        for(i=10;i<=25;i++){
+            document.write(i*i*i,",")
+        }
+        document.write("<hr>")
+        x=5
+        for(i=1;i<=10;i++){
+            document.write("<br>",x,"x",i,"=",i*x)
+        }
+        document.write("<hr>")
+        let num=323,temp,rev=0
+        str=num.toString()
+        num2=str.length
+        for(;num2>0;num2--){
+            temp=num%10
+            num=num-temp
+            num=num/10
+            rev=(rev*10)+temp
+        }
+        document.write("REVERSE=",rev)
+        document.write("<hr>")
+        num=333,temp,rev=0
+        let num3=num
+        str=num.toString()
+        num2=str.length
+        for(;num2>0;num2--){
+            temp=num%10
+            num=num-temp
+            num=num/10
+            rev=(rev*10)+temp
+        }
+        if(num3==rev){
+            document.write("Number is Pallindrome")
+        }
+        else{
+            document.write("Number is not Pallindrome")
+        }
+        document.write("<hr>")
+        num=0,num2=1
+        let next
+        document.write(num,",")
+        document.write(num2,",")
+        for(i=2;i<10;i++){
+            next=num+num2
+            document.write(next,",")
+            num=num2
+            num2=next
+        }
+        document.write("<hr>")
+        num=153,temp,rev=0,arm=0
+        num3=num
+        str=num.toString()
+        num2=str.length
+        for(;num2>0;num2--){
+            temp=num%10
+            num=num-temp
+            num=num/10
+            rev=temp*temp*temp
+            arm=arm+rev
+        }
+        if(num3==arm){
+            document.write("Number is armstrong")
+        }
+        else{
+            document.write("Number is not armstrong")
+        }
+        document.write("<hr>")
+        x=10
+        for(i=0;i<5;i++){
+            document.write(x,",")
+            x=x+10
+        }
+        document.write("<br>")
+        x=25
+        for(i=0;i<5;i++){
+            document.write(x,",")
+            x=x+5
+        }
+        document.write("<br>")
+        x=10
+        for(i=1;i<5;i++){
+            document.write(x,",")
+            x=x*10
+        }
+        document.write("<br>")
+        x=5
+        for(i=0;i<7;i++){
+            document.write(x,",")
+            x=x+5
+        }
+        document.write("<br>")
+        x=8
+        for(i=0;i<7;i++){
+            document.write(x,",")
+            x=x+2
+        }
+        document.write("<br>")
+        x=7
+        for(i=0;i<7;i++){
+            document.write(x,",")
+            x=x+2
+        }
+    </script>
+</body>
+</html>
