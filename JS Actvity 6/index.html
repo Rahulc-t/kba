@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mov=["Topgun","Mission Impossible","CID Moosa","Shawshank Redemption","Rambo","Aavesham","Dhoom","Jailer","RRR"]
+        document.write("Favorite movie=",mov[1])
+        mov.push("Terminator")
+        mov.push("Rocky")
+        document.write("<br>",mov)
+        mov.pop()
+        document.write("<br>",mov)
+        delete mov[3]
+        let i,temp
+        for(i=3;i<9;i++){
+            temp=mov[i]
+            mov[i]=mov[i+1]
+            mov[i+1]=temp
+        }
+
+        document.write("<br>",mov)
+        let mov1=[]
+        for(i=3;i<7;i++){
+            mov1[i-3]=mov[i]
+        }
+        document.write("<br>",mov1)
+        document.write("<br>fav actor film:",mov[5])
+        let len=mov.length,flag=0
+        for(i=0;i<len;i++){
+            if(mov[i]=="Aavesham"){
+                document.write("<br>MATCH FOUND")
+                flag=1
+            }
+
+        }
+        if(flag==0){
+            document.write("MATCH NOT FOUND")
+        }
+        document.write("<hr>")
+        let a=[1,2,3,4,5,6],b=[]
+        for(i=0;i<6;i++){
+            b[i]=a[i]
+        }
+        document.write("<br>",a)
+        document.write("<br>",b)
+        document.write("<hr>")
+        let c=[]
+        for(i=5,j=0;i>=0;j++,i--){
+            c[j]=a[i]
+        }
+        document.write("<br>",a)
+        document.write("<br>",c)
+        document.write("<hr>")
+        a=[20,25,30,35,40,45,50,55]
+        let a1=[],a2=[]
+        for(i=0;i<8;i++){
+            if(i<4){
+                a1[i]=a[i]
+            }
+            else{
+                a2[i-4]=a[i]
+            }
+        }
+        document.write("<br>",a)
+        document.write("<br>",a1)
+        document.write("<br>",a2)
+        document.write("<hr>")
+        let a3=[2,4,6,8],b1=[1,3,5,7]
+        let len1=a3.length,len2=b1.length
+        for(i=0;i<len2;i++){
+            a3[len1+i]=b1[i]
+        }
+        document.write("<br>",a3)
+        document.write("<hr>")
+        document.write("<br>",a)
+        len=a.length,num=55
+        for(i=0;i<len;i++){
+            if(a[i]==num){
+                document.write("<br>Match Found")
+                break;
+            }
+        }
+        document.write("<hr>")
+        let a4=[8,2,6,7,3,1]
+        for(i=0;i<5;i++){
+            for(j=0;j<5-i;j++){
+                if(a4[j]>a4[j+1]){
+                    temp=a4[j]
+                    a4[j]=a4[j+1]
+                    a4[j+1]=temp
+                }
+            }
+        }
+        document.write("<br>",a4)
+        document.write("<hr>")
+        a4=[8,2,6,7,3,1]
+        for(i=0;i<5;i++){
+            for(j=0;j<5-i;j++){
+                if(a4[j]<a4[j+1]){
+                    temp=a4[j]
+                    a4[j]=a4[j+1]
+                    a4[j+1]=temp
+                }
+            }
+        }
+        document.write("<br>",a4)
+        document.write("<hr>")
+        let a5=[6,8,20,37,5]
+        let max=a5[0],min=a5[0]
+        for(i=1;i<5;i++){
+            if(a5[i]>max){
+                max=a5[i]
+            }
+            if(a5[i]<min){
+                min=a5[i]
+            }
+        }
+        document.write("<br>MAX=",max)
+        document.write("<br>MIN=",min)
+        document.write("<hr>")
+        let name="tiger",rev=[]
+        len=name.length
+        for(i=0,j=4;i<len;i++,j--){
+            rev[i]=name[j]
+        }
+        document.write("<br>",name)
+        document.write("<br>",rev)
+        document.write("<hr>")
+        let d="maximum alert"
+        len=d.length
+        document.write("<br>",d)
+        for(i=0;i<len;i++){
+
+            if(d[i]=="a")
+            document.write("<br>a is found in=",i)
+        }
+        document.write("<hr>")
+        let d1=[1,6,7,8,2,3,4,2,9,2,2]
+        len=d.length
+        document.write("<br>",d1)
+        for(i=0;i<len;i++){
+
+            if(d1[i]==2)
+            document.write("<br>2 is found in=",i)
+        }
+        document.write("<hr>")
+        let e1=[4,5,6,7,8],e2=[2,3,4,5,6],uni=[],int=[]
+        for(i=0;i<5;i++){
+                if(!uni.includes(e1[i])){
+                    uni.push(e1[i])
+            }
+            if(e1.includes(e2[i])){
+                int.push(e2[i])
+            }
+        }
+    for(i=0;i<5;i++){
+            
+                if(!uni.includes(e2[i])){
+                    uni.push(e2[i])
+            }
+        }
+    
+        document.write("<br>",e1)
+        document.write("<br>",e2)
+        document.write("<br>UNION=",uni)
+        document.write("<br>INTERSECTION=",int)
+        document.write("<hr>")
+        temp=2
+        for(i=0;i<3;i++){
+            document.write("<br>")
+            for(j=0;j<3;j++){
+                document.write("&nbsp",temp)
+                temp=temp+2
+            }
+        }
+         document.write("<hr>")
+         temp=2
+        for(i=3;i>0;i--){
+            document.write("<br>")
+            for(j=0;j<i;j++){
+                document.write(temp,"&nbsp&nbsp")
+                temp=temp+2
+            }
+        }
+        document.write("<hr>")
+        temp=2
+        for(i=0;i<4;i++){
+            document.write("<br>")
+            for(j=0;j<=i;j++){
+                document.write(temp,"&nbsp")
+                temp=temp+2
+            }
+        }
+        document.write("<hr>")
+        temp=5
+        for(i=0;i<3;i++){
+            document.write("<br>")
+            for(j=0;j<3;j++){
+                document.write("&nbsp",temp)
+                temp=temp+5
+            }
+        }
+        document.write("<hr>")
+        for(i=3;i>0;i--){
+            document.write("<br>")
+            for(j=0;j<i;j++){
+                document.write("*")
+            }
+        }
+        document.write("<hr>")
+        temp=2
+        for(i=0;i<4;i++){
+            document.write("<br>")
+            for(j=0;j<=i;j++){
+                document.write(i+1)
+            }
+        }
+        document.write("<hr>")
+        temp=1
+        for(i=0;i<4;i++){
+            document.write("<br>")
+            for(j=0;j<=i;j++){
+                document.write(temp)
+                temp++
+            }
+        }
+        document.write("<hr>")
+        for(i=1;i<=4;i++){
+            for(j=1;j<=2*(4-i);j++){
+                document.write("&nbsp")
+            }
+            for(let k=1;k<2*i;k++){
+                document.write("*&nbsp")
+            }
+            document.write("<br>")
+        }
+        document.write("<hr>")
+        temp=1
+        for(i=1;i<=4;i++){
+            for(j=1;j<=2*(4-i);j++){
+                document.write("&nbsp")
+            }
+            for(let k=1;k<2*i;k++){
+                document.write(temp)
+                temp++
+            }
+            document.write("<br>")
+        }
+        document.write("<hr>")
+        let marks=[90,78,86,92,98],sum=0
+        for(i=0;i<5;i++){
+            sum=sum+marks[i]
+        }
+        let percentage
+        percentage=(sum/500)*100
+        if(percentage>90){
+            document.write("<br>GRADE=A+")
+        }
+        else if(percentage<=90 && percentage>80){
+            document.write("<br>GRADE=A")
+        }
+        else if(percentage<=80 && percentage>70){
+            document.write("<br>GRADE=B+")
+        }
+        else if(percentage<=70 && percentage>60){
+            document.write("<br>GRADE=B")
+        }
+        else if(percentage<=60 && percentage>50){
+            document.write("<br>GRADE=C+")
+        }
+        else if(percentage<=50 && percentage>40){
+            document.write("<br>GRADE=C")
+        }
+        else{
+            document.write("<br>FAIL")
+        }
+        document.write("<hr>")
+        let even2=[]
+        for(i=1;i<=10;i++){
+            even2[i-1]=i*2
+        }
+        document.write(even2)
+        for(i=0;i<10;i++){
+            if(even2[i]==16){
+                delete even2[i];
+                flag=i;
+                break;
+            }
+        }
+        for(i=flag;i<9;i++){
+            temp=even2[i]
+            even2[i]=even2[i+1]
+            even2[i+1]=temp
+        }
+        document.write("<br>",even2)
+        document.write("<hr>")
+        let sent="i am a lion",count=0;
+        len=sent.length
+        for(i=0;i<len;i++){
+            if(sent[i]=="A"||sent[i]=="E"||sent[i]=="I"||sent[i]=="O"||sent[i]=="U"||sent[i]=="a"||sent[i]=="e"||sent[i]=="i"||sent[i]=="o"||sent[i]=="u"){
+                count++;
+            }
+        }
+        document.write("No.of Vowels=",count)
+    </script>
+</body>
+</html>

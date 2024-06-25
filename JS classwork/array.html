@@ -7,9 +7,98 @@
 </head>
 <body>
     <script>
-        let a=["aaa","fff","dddd","gggg","oooo","pppp","eeee"]
-        for(i=0;i<7;i++){
+        let a=[]
+        for(i=0;i<5;i++){
+            a[i]=i+1
+            
+        }
+        for(i=0;i<5;i++){
             document.write("<br>",a[i])
+        }
+        document.write("<hr>")
+        let even=[],j=2
+        for(i=0;i<5;i++){
+            even[i]=j
+            j=j+2;
+        }
+        for(i=0;i<5;i++){
+            document.write(even[i],",")
+        }
+        document.write("<br>LENGTH=",even.length)
+        let len,sum=0
+        len=even.length
+        for(i=0;i<len;i++)
+        {
+            sum+=even[i];
+        }
+        document.write("<br>SUM OF ARRAY=",sum)
+        document.write("<hr>")
+        //for in loop
+        sum=0
+        for(x in even){
+            even[x]=even[x]+2;
+        }
+        for(i=0;i<5;i++){
+            document.write(even[i],",")
+        }
+        
+        document.write("<br>")
+        x=2
+        for(i=0;i<5;i++){
+            if(i==x){
+                even[i]=25
+                break;
+            }
+        }
+        even.push(16)
+        for(i=0;i<6;i++){
+            document.write(even[i],",")
+        }
+        document.write("<hr>")
+        for(i=5;i>=0;i--){
+            document.write(even[i],",")
+        }
+        document.write("<hr>")
+        let str="javascript"
+        let str2=[]
+        len=str.length
+        for(i=0;i<len;i++){
+            if(str[i]=="s"){
+                str2[i]="z"
+                
+            }
+            else{
+                str2[i]=str[i]
+            }
+            document.write("<br>",str2[i])
+        }
+        document.write("<hr>")
+        for(i=0;i<5;i++){
+            document.write("<br>")
+            for(j=0;j<5;j++){
+                document.write(i,j,"javascript")
+            }
+        }
+        document.write("<hr>")
+        for(i=0;i<3;i++){
+            document.write("<br>")
+            for(j=0;j<3;j++){
+                document.write("*")
+            }
+        }
+        document.write("<hr>")
+        for(i=0;i<3;i++){
+            document.write("<br>")
+            for(j=0;j<=i;j++){
+                document.write("*")
+            }
+        }
+        document.write("<hr>")
+        for(i=0;i<3;i++){
+            document.write("<br>")
+            for(j=0;j<=i;j++){
+                document.write(j+1)
+            }
         }
     </script>
     
