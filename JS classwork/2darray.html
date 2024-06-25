@@ -14,6 +14,90 @@
             }
             document.write("<br>")
         }
+        document.write("<br>ffff=",a.length)
+        document.write("<br>ffff=",a[0].length)
+        document.write("<hr>")
+        let a1=[[]]
+        for(i=0;i<3;i++){
+            for(j=0;j<3;j++){
+                a1[i]=[j]
+            }
+        }
+        for( i=0;i<3;i++){
+            for( j=0;j<3;j++){
+                a1[i][j]=i+1
+            }
+            
+        }
+        for(let i=0;i<3;i++){
+            for(let j=0;j<3;j++){
+                document.write("&nbsp",a1[i][j])
+            }
+            document.write("<br>")
+        }
+        document.write("<hr>")
+        let s=[[]]
+        for(i=0;i<3;i++){
+            for(j=0;j<3;j++){
+                s[i]=[j]
+            }
+        }
+        if(a.length==a1.length&&a[0].length==a1[0].length){
+            for(i=0;i<3;i++){
+                for(j=0;j<3;j++){
+                    s[i][j]=a[i][j]+a1[i][j]
+                }
+            }
+            for(let i=0;i<3;i++){
+            for(let j=0;j<3;j++){
+                document.write("&nbsp",s[i][j])
+            }
+            document.write("<br>")
+        }
+        }
+        else{
+            document.write("NOT POSSIBLE")
+        }
+        document.write("<hr>")
+        sum=0
+        let student=[["anju",90,"fair"],["sumi",89,"good"],["anu",50,"bad"],["saj",77,"ok"]]
+        for(i=0;i<student.length;i++){
+            sum=sum+student[i][1]
+        }
+        document.write("Average=",sum/student.length)
+        document.write("<hr>")
+        let a3=[[1,2,3],[3,4,5],[7,8,9],[2,3,3],[6,9,0]],tra=[[]]
+        for(i=0;i<a3[0].length;i++){
+            for(j=0;j<a3.length;j++){
+                tra[i]=[j]
+            }
+        }
+        document.write("<br>test")
+        for(i=0;i<a3.length;i++){
+            for(j=0;j<a3[i].length;j++){
+                //if(i==j){
+                  //  tra[i][j]=a3[i][j]
+                //}
+                //else{
+                    tra[j][i]=a3[i][j]
+                //}
+            }
+        }
+        document.write("<br>test")
+        for(let i=0;i<a3.length;i++){
+            for(let j=0;j<a3[0].length;j++){
+                document.write("&nbsp",a3[i][j])
+            }
+            document.write("<br>")
+        }
+        document.write("<br>")
+        for(let i=0;i<tra.length;i++){
+            for(let j=0;j<tra[0].length;j++){
+                document.write("&nbsp",tra[i][j])
+            }
+            document.write("<br>")
+        }
+
     </script>
     
 </body>
