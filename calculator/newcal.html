@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div>
+            <label for="inputa">input a</label>
+            <input type="number" id="inputa">
+            <br>
+            <label for="inputb">INPUT b</label>
+            <input type="number"id="inputb">
+            <table>
+                <tr>
+                    <td><button onclick="add()">Add</button></td>
+                    <td><button onclick="sub()">Subtract</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="mul()">Multiply</button></td>
+                    <td><button onclick="div()">Divide</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="mod()">modulus</button></td>
+                    <td><button onclick="exp()">exponent</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="disp()">Submit</button></td>
+                    <td id="001"></td>
+                </tr>
+            </table>
+        </div>
+        <script>
+            document.write(x)
+            let a
+            let b
+            let result=0
+            function add(){
+                a=parseFloat(document.getElementById("inputa").value);
+                b=parseFloat(document.getElementById("inputb").value)
+                result=0
+                result=a+b
+            }
+            function sub(){
+                a=parseFloat(document.getElementById("inputa").value);
+                b=parseFloat(document.getElementById("inputb").value)
+                result=0
+                result=a-b
+            }
+            function mul(){
+                a=parseFloat(document.getElementById("inputa").value);
+                b=parseFloat(document.getElementById("inputb").value)
+                result=0
+                result=a*b
+            }
+            function div(){
+                a=parseFloat(document.getElementById("inputa").value);
+                b=parseFloat(document.getElementById("inputb").value)
+                result=0
+                result=a/b
+            }
+            function mod(){
+                a=parseFloat(document.getElementById("inputa").value);
+                b=parseFloat(document.getElementById("inputb").value)
+                result=0
+                result=a%b
+            }
+            function exp(){
+                a=parseFloat(document.getElementById("inputa").value);
+                b=parseFloat(document.getElementById("inputb").value)
+                result=0
+                result=a**b
+            }
+            function disp(){
+                document.getElementById("001").innerHTML=result
+            }
+        </script>
+
+    </div>
+</body>
+</html>
