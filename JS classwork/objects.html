@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> output in console</h3>
+    <script>
+        let person={
+            name:"Alice",
+            age:24,
+            city:"trivandrum",
+            greet: function(){
+                console.log("hello i am "+this.name)
+            }
+        };
+        console.log(person.name)
+        console.log(person.age)
+        console.log(person.city)
+        person.greet()
+        let member={
+            name:"frodod",
+        };
+        function helo(text){
+            console.log(text +" "+ this.name)
+        }
+        //using call to invoke function
+        helo.call(member,"hello");
+        person.greet.call(member);
+        //using apply
+        function animal(name,text){
+            console.log(name+","+" "+this.name+" "+text)
+
+        }
+        animal.apply(member,["york","is lion"])
+        //using bind
+        let helomember=helo.bind(member,"hello");
+        helomember();
+    </script>
+</body>
+</html>
