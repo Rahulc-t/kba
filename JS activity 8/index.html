@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript 8 exercise</h1>
+    <p>output in console</p>
+    <script>
+        //exercise 1
+        function sayGoodbye(name){
+            console.log("Goodbye"+" "+name)
+        }
+        sayGoodbye("Rahul")
+        //exercise 2
+        function modulus(x,y){
+            console.log("modulus="+" "+x%y)
+        }
+        modulus(8,3)
+        //excercise 3
+        function introduce(){
+            console.log("hello my name is"+" "+this.name)
+        }
+        let person={
+            name:"Rahul",
+        };
+        //call
+        introduce.call(person)
+        function intro(greet,bod){
+            console.log(greet+" "+this.name+" , "+bod)
+        }
+        //apply
+        intro.apply(person,["hello","here"])
+         sub={
+            topic:"Blockchain",
+        };
+        function intro2(text){
+            console.log(text+" "+this.topic)
+        }
+        //bind
+        let printtopic= intro2.bind(sub,"subject is");
+        printtopic();
+       //exercise 4
+       function calculate(a,b,operate){
+         operate(a,b)
+
+       }
+       function add(a,b){
+        console.log("a+b="+(a+b))
+       }
+       function subs(a,b){
+        console.log("a-b="+(a-b))
+       }
+        function pro(a,b){
+         console.log("a*b="+(a*b))
+        }
+        function div(a,b){
+         console.log("a/b="+(a/b))
+        }
+       calculate(3,4,add)
+        calculate(3,4,subs)
+        calculate(3,4,pro)
+        calculate(3,4,div)
+        const square=calculate.bind(null,5,5,pro)
+        square();
+        console.log("-============")
+    </script>
+</body>
+</html>
