@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher order array</title>
+</head>
+<body>
+    <h1>Highre array</h1>
+    <p>output in console</p>
+    <script>
+        const numbers=[1,2,3,4,5]
+        let doubled= numbers.map(num => num*2)
+        console.log(numbers)
+        console.log(doubled)
+        let even=numbers.filter(num =>num%2===0);
+        console.log(even)
+        let sum=numbers.reduce((acc,curr)=>acc+curr,0)
+        console.log(sum)
+        let num=0
+        let a=new Array(5).fill(6);
+        console.log(a)
+        let array2d= new Array(5).fill(0).map(()=> new Array(5).fill(0));
+        array2d[3][3]=56
+        console.log(array2d)
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="ogp"></p>
+    <p id="modp"></p>
+    <script>
+        //changing object value using new sub object x
+        //JSON.stringfy used to convert objects into strings
+        const person={
+            fname:"Jhon",
+            age:30,
+
+        }
+        let p=JSON.stringify(person)
+        document.getElementById("ogp").innerHTML="object="+JSON.stringify(person)
+        const x=person
+        x.age=10
+        document.getElementById("modp").innerHTML=`mod person: ${JSON.stringify(person)}`
+    </script>
+</body>
+</html>

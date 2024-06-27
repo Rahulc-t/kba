@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object recap</title>
+</head>
+<body>
+    <h3>output in console</h3>
+    <p id="001"></p>
+    <script>
+        const car = new Object();
+        car.brand="toyoto";
+        car.model ="tavera";
+        car.getdetails=function(){
+            return `brand: ${this.brand}, Model: ${this.model}`;
+        }
+        document.getElementById("001").textContent=car.getdetails();
+    </script>
+</body>
+</html>

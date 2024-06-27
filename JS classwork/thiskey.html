@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Checking the scope of this keyword</h1>
+    <button onclick="disp()">click me</button>
+    <script>
+        //global scope
+        console.log(this);//window object
+        //function scope
+        function showthis(){
+            console.log(this);
+        }
+        showthis()//window obj
+        //object method scope
+        let person={
+            name:"bomb",
+            greet: function(){
+                console.log("hello, "+this.name );
+            }    
+        };
+        person.greet();//hello bod ,this means object name
+        let arrowgreet= () =>{
+            console.log('arrow this:',this);
+        }
+        arrowgreet();//window object
+        function disp(){
+            window.alert("output in console")
+        }
+        //immdeitly invoked funtion
+        (function(){
+            console.log("IIFE excuted");
+        })();
+    </script>
+</body>
+</html>

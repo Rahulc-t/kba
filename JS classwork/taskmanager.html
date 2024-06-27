@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Task Manager</title>
+    <style>
+        ul{list-style-type:none;}
+        li{margin: 5px 0;}
+    </style>
+</head>
+<body>
+    <h1>Simple Task Manager</h1>
+    <label for="task">Enter a Task</label>
+    <input type="text" id="task"><br>
+    <button onclick="addtask()">Add Task</button>
+    <ul id="taskList"></ul>
+    <script>
+        function addtask(){
+            let arr=document.getElementById("task");
+            let lists=document.getElementById("taskList")
+            if(arr.value.trim()!==""){
+                const li=document.createElement("li")
+                let li2=document.createElement("li")
+                li.textContent=arr.value;
+                const rembut=document.createElement("button");
+                rembut.textContent="Remove"
+                rembut.onclick= function(){
+                    taskList.removeChild(li);
+                    taskList.removechild(li2)
+                };
+                const edit=document.createElement("button");
+                edit.textContent="Edit"
+                edit.onclick= function(){
+                    arr.value=li.textContent
+                    //task.appendchild(li)
+                    taskList.removeChild(li);
+                    taskList.removeChild(li2)
+                }
+                const complete=document.createElement("button")
+                complete.textContent="Complete"
+                complete.onclick= function(){
+                    
+
+                }
+                li2.appendChild(rembut);
+                li2.appendChild(edit);
+                li2.appendChild(complete)
+                taskList.appendChild(li);
+                taskList.appendChild(li2)
+                taskInput.value=" ";
+            }
+        }
+    </script>
+</body>
+</html>
