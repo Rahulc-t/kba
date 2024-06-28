@@ -21,31 +21,39 @@
             let lists=document.getElementById("taskList")
             if(arr.value.trim()!==""){
                 const li=document.createElement("li")
-                let li2=document.createElement("li")
+                //let li2=document.createElement("li")
                 li.textContent=arr.value;
+                let c=arr.value
                 const rembut=document.createElement("button");
                 rembut.textContent="Remove"
                 rembut.onclick= function(){
                     taskList.removeChild(li);
-                    taskList.removechild(li2)
+                    //taskList.removechild(li2)
                 };
                 const edit=document.createElement("button");
                 edit.textContent="Edit"
                 edit.onclick= function(){
-                    arr.value=li.textContent
+                    arr.value=c
                     //task.appendchild(li)
                     taskList.removeChild(li);
-                    taskList.removeChild(li2)
+                    //taskList.removeChild(li2)
                 }
                 const complete=document.createElement("button")
                 complete.textContent="Complete"
                 complete.onclick= function(){
                     li.style.textDecoration="line-through"
+                    let undo=document.createElement("button")
+                    undo.textContent="Undo"
+                    undo.onclick= function(){
+                        li.style.textDecoration="none"
+                        li.removeChild(undo);
+                    }
+                    li.append(undo)
 
                 }
-                li2.appendChild(rembut);
-                li2.appendChild(edit);
-                li2.appendChild(complete)
+                li.appendChild(rembut);
+                li.appendChild(edit);
+                li.appendChild(complete)
                 taskList.appendChild(li);
                 taskList.appendChild(li2)
                 taskInput.value=" ";
