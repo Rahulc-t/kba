@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gro{
+            color: green;
+
+        }
+        .ele{
+            color:blue;
+        }
+        .cloth{
+            color:purple;
+        }
+        .buy{
+            color: grey;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <script src="exam.js"></script>
+    <label for="itemName">ENTER ITEM NAME:</label>
+    <input type="text" id="itemName">
+    <label for="category">ENTER THE CATEGORY(1-Groceries, 2-Electronics, 3-Clothing):</label>
+    <input type="text" id="category">
+    <button onclick="additem()">ADD ITEM</button>
+    <ul id="shoplist"></ul>
+    
+</body>
+</html>
