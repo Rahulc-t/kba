@@ -1,25 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <label>Name</label>
-    <input type="text">
+    <input type="text"><br>
     <label>Address</label>
-    <textarea></textarea>
+    <textarea></textarea><br>
     <label>Courses</label>
-    <input type="radio" name="course"value="BTech" >
-    <input type="radio" name="course"value="BTech" >
-    <input type="radio" name="course"value="BTech" >
-    <input type="radio" name="course"value="others" onclick="others()">
+    <input type="radio" name="course" value="BTech" onclick="others2()">BTech
+    <input type="radio" name="course" value="BTech" onclick="others2()">MTech
+    <input type="radio" name="course" value="BTech" onclick="others2()">MCA
+    <input type="radio" name="course" value="others" onclick="others()">Others
+    <div id="101"></div>
     <script>
-        function others(){
-            sel=document.createElement
+        let place = document.getElementById("101")
+        let sel;
+        function others() {
+            if (sel && sel.parentNode) { //checking if sel element exists and if it is inside a container
+                sel.parentNode.removeChild(sel) //can be replaced with place.removChild(sel);
+            }
+            sel = document.createElement("select")
+            place.appendChild(sel)
+            let ops = document.createElement("option")
+            ops.textContent = "Mphil"
+            sel.appendChild(ops)
+            ops = document.createElement("option")
+            ops.textContent = "BCA"
+            sel.appendChild(ops)
+            ops = document.createElement("option")
+            ops.textContent = "BCom"
+            sel.appendChild(ops)
+            ops = document.createElement("option")
+            ops.textContent = "PGDCA"
+            sel.appendChild(ops)
         }
-        
+        function others2() {
+            if (sel && sel.parentNode) { //checking if sel element exists and if it is inside a container
+                sel.parentNode.removeChild(sel) //can be replaced with place.removChild(sel);
+            }
+        }
+
     </script>
 </body>
+
 </html>
