@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>View Certificate</title>
+	</head>
+	<body>
+		
+		<center>
+			<h1>Kerala Blockchain Academy</h1>
+			<br><br>
+			<pre>          <img src=./images/img1.png></pre>
+			<br><br>
+			<p id="printName">This is to certify that</p><br>
+			<p id="printCourse">has successfully completed</p>
+			<br><p id="printGrade">with on</p>
+			
+		</center>
+	</body>
+    <script>
+        console.log("test")
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+        function view(){
+            let cid=getQueryParam("cid")
+            if(localStorage.getItem(cid)!==null){
+                let data=JSON.parse(localStorage.getItem(cid))
+                document.getElementById("printName").innerHTML=`This is to certify that ${data.name}`
+                document.getElementById("printCourse").innerHTML=`has successfully completed ${data.course}`
+                document.getElementById("printGrade").innerHTML=` with ${data.grade} grade on ${data.date}`
+            }
+            let searchTerm=getQueryParam("searchTerm")
+            if(localStorage.getItem(searchTerm)!==null){
+                let data=JSON.parse(localStorage.getItem(searchTerm))
+                document.getElementById("printName").innerHTML=`This is to certify that ${data.name}`
+                document.getElementById("printCourse").innerHTML=`has successfully completed ${data.course}`
+                document.getElementById("printGrade").innerHTML=` with ${data.grade} grade on ${data.date}`
+            }
+        }
+        window.onload=view;
+    </script>
+	
+</html>

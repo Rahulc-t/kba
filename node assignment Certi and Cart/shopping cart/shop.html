@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="shopWindow">
+        <select name="" id="itemList">
+            <option value="Football">Football - 3,500</option>
+            <option value="Bat">Bat - 7,300</option>
+            <option value="PS5">PS5 - 69,000</option>
+            <option value="Mobile Phone">Mobile Phone - 29,000</option>
+            <option value="Shirt">Shirt - 1,200</option>
+        </select><br>
+        <input type="text" name="" id="quantity"><br>
+        <button id="add" onclick="addItem()">Add</button>
+        <p>cart</p>
+        <table id="tableList">
+            <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="carter"></tbody>
+        </table>
+    </div>
+    <script src="./shop.js"></script>
+</body>
+</html>

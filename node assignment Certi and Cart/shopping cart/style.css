@@ -1,0 +1,82 @@
+/* style.css */
+
+/* General styling for the container */
+.shopWindow {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style the select box and input */
+#itemList, #quantity {
+    width: calc(50% - 22px); /* 50% width minus padding and border */
+    padding: 12px;
+    margin: 10px 5px;
+    border: 1px solid #555;
+    border-radius: 6px;
+    background-color: #e0f7fa;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Style the add button */
+#add {
+    padding: 12px 20px;
+    margin: 20px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#add:hover {
+    background-color: #0056b3;
+}
+
+/* Style the cart table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    font-size: 16px;
+    background-color: #f9fbe7;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 14px;
+    border: 1px solid #777;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    border-top: none;
+}
+
+/* Style the remove button */
+button {
+    padding: 8px 16px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c82333;
+}
